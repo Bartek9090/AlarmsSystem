@@ -11,7 +11,7 @@ const interval = setInterval(function() {
 	startCarousel()
 }, 4000);
 
-let index = 0;
+let index = 1;
 
 startCarousel =  () =>{ 
 	carousel.style.backgroundImage = `url(${images[index++]})`;
