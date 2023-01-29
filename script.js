@@ -5,13 +5,13 @@ menu.addEventListener('click', ()=>{
 
 // slider
 
-const images = ["img/dvbtsat.jpg", "IMG/tvprze.jpg", "IMG/videodomofon.jpg"];
+const images = ["IMG/dvbtsat.jpg", "IMG/tvprze.jpg", "IMG/videodomofon.jpg"];
 const carousel = document.querySelector('.carousel')
 const interval = setInterval(function() {
 	startCarousel()
 }, 4000);
 
-let index = 1;
+let index = 0;
 
 startCarousel =  () =>{ 
 	carousel.style.backgroundImage = `url(${images[index++]})`;
