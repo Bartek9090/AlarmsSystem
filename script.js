@@ -5,7 +5,7 @@ menu.addEventListener('click', ()=>{
 
 // slider
 
-const images = ["IMG/dvbtsat.jpg", "IMG/tvprze.jpg", "IMG/videodomofon.jpg"];
+const images = ["IMG/dvbtsat.jpg", "IMG/manipulator2.jpg", "IMG/videodomofon.jpg"];
 const carousel = document.querySelector('.carousel')
 const interval = setInterval(function() {
 	startCarousel()

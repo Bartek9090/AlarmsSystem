@@ -28,7 +28,7 @@ section {
 .headerWrapperContent {
   display: flex;
   justify-content: flex-end;
-  background: center  url(IMG/BGCutted.png) ;
+  background: center url(IMG/BGCutted.png);
   background-size: 100% 120%;
   height: 100px;
 }
@@ -69,9 +69,8 @@ section {
   height: 6px;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-.line:nth-child(odd):hover{
+.line:nth-child(odd):hover {
   color: rgb(246, 182, 64);
-
 }
 
 /* Menu after click */
@@ -103,14 +102,14 @@ section {
   cursor: pointer;
 }
 
-.menu-link:hover{
-color: rgb(246, 182, 64);}
+.menu-link:hover {
+  color: rgb(246, 182, 64);
+}
 
 .change {
   z-index: 120;
   top: 0px;
   animation: animateNavbar 1s;
-
 }
 
 @keyframes animateNavbar {
@@ -131,11 +130,11 @@ color: rgb(246, 182, 64);}
 } */
 
 /* Section 2 carousel slider */
-.section2Slider{
+.section2Slider {
   width: 340px;
 }
 
-.carousel{
+.carousel {
   background-position: center;
   background-size: cover;
   background: url(IMG/dvbtsat.jpg);
@@ -144,56 +143,129 @@ color: rgb(246, 182, 64);}
   z-index: 14;
 }
 
-.fade{
+.fade {
   -webkit-animation: 1.5s fade;
   animation: 1.5s fade;
-
 }
 
-@-webkit-keyframes fade{
-  from{opacity: 0.4}
-  to{opacity: 1;}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-@keyframes fade{
-  from{opacity: 0.4}
-  to{opacity: 1;}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.sliderHeader{
+.sliderHeader {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: calc(83%);
 }
-.mainHeader{
+.mainHeader {
   color: #ece4e4;
   width: 100%;
   background-color: #282626de;
   display: flex;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
   text-align: center;
   padding: 6px 10px;
 }
 /* Section 3 about company */
-.companyWrapper{
+.companyWrapper {
   display: flex;
   flex-direction: column;
 }
-.companyIMG{
+.companyIMG {
   width: 100%;
   height: 80%;
 }
-.companyContent{
+.companyContent {
   background-color: #ece4e4;
 
-padding: 4px;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
+  padding: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-/* Section 4 services*/
+/* Section 4 where */
+
+.whereHeaderWrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f4e4e;
+flex-direction: column;
+text-align: center;}
+
+  .whereTXT{
+    font-size: 34px;
+    color: #ece4e4;
+    letter-spacing: 3px;
+  }
+
+  .whereDescription{
+    padding: 8px;
+    color: #ece4e4;
+    font-size: 20px;
+
+
+  }
+  .wherePlaceWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ece4e4;
+    
+  }
+  .singlePlaceWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .singlePlaceWrapper i{
+    font-size: 40px;
+    color: rgba(246, 182, 64, 0.789);
+  }
+  .singlePlaceWrapper .place{
+    font-size: 40px;
+    color: #4f4545;
+    padding-left: 35px;
+  }
+
+  .placeBTN{
+    
+  width: 180px;
+  font-weight: 600;
+  margin: 8px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  }
+
+  .placeBTN:hover {
+    transform: scale(1.1);
+    background-color: rgb(246, 182, 64);
+  }
+/* Section 5 services*/
 
 .about-us {
   background-color: #ece4e4;
@@ -263,7 +335,7 @@ i {
 
 .service-header h3 {
   font-family: "Muli", serif;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   margin-bottom: 2px;
@@ -317,11 +389,10 @@ i {
   /* grid-column: 7/11;
   grid-row: 2/6; */
 
-display: flex;
-justify-content: flex-end;
-flex-direction: column;
-align-items: end;
-
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: end;
 }
 
 .about-us-img-wrapper img {
