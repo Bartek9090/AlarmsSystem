@@ -1,23 +1,43 @@
+// menu open close
+
 const menu = document.querySelector(".hamburger-menu")
 menu.addEventListener('click', ()=>{
 	document.querySelector(".topbar").classList.toggle('change')
 })
 
-// slider
+let navigationLinks = document.querySelectorAll(".topbar .menu li a");
 
-const images = ["IMG/dvbtsat.jpg", "IMG/manipulator2.jpg", "IMG/videodomofon.jpg"];
-const carousel = document.querySelector('.carousel')
-const interval = setInterval(function() {
-	startCarousel()
-}, 4000);
+navigationLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      document.querySelector(".topbar").classList.remove('change')
+      document.querySelector("DOM").classList.remove('change')
+    })
+})
+// slider carousel
 
-let index = 1;
+function SlideShow(n) {
+  let i;
+  const slides = document.getElementsByClassName("Containers");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  
+  slides[slidePosition-1].style.display = "block";
+} 
 
-startCarousel =  () =>{ 
-	carousel.style.backgroundImage = `url(${images[index++]})`;
+let slidePosition = 0;
+SlideShow();
 
-	carousel.classList.remove('fade');
-	void carousel.offsetWidth;
-	if(index > images.length -1  ) index = 0;
-	carousel.classList.add('fade')
-}
+function SlideShow() {
+  let i;
+  const slides = document.getElementsByClassName("Containers");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slidePosition++;
+  if (slidePosition > slides.length) {slidePosition = 1}
+  slides[slidePosition-1].style.display = "block";
+  setTimeout(SlideShow, 4000); // Change image every 4 seconds
+} 
