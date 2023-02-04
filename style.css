@@ -612,3 +612,29 @@ i {
   }
 }
 
+/* ABOUT US_ */
+
+.mainCointainerAboutUS{
+  width: 380px;
+  border: 1px solid black;
+  height: 100%;
+  background-color: var(--primaryBackgroundColor);
+}
+.HeadingOffer{
+  font-size: 40px;
+  text-shadow: 4px 4px 6px grey;}
+.offerCointainer{
+  display: flex;
+  text-align: center;
+
+  flex-direction: column;}
+.wrapperOffert{
+  width: 380px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.offerDescription{
+  padding: 10px;
+}  
