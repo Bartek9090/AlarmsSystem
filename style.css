@@ -164,9 +164,12 @@ section {
 .Containers {
   display: none;
   background-color: var(--primaryBackgroundColor);
+
+
 }
 .Containers img {
-    height: 70vh;}
+  background-size: cover;
+  height: 75vh;}
 
 /* Caption Info */
 .Info {
@@ -616,9 +619,9 @@ i {
 
 .mainCointainerAboutUS{
   width: 380px;
-  border: 1px solid black;
   height: 100%;
   background-color: var(--primaryBackgroundColor);
+  position: relative;
 }
 .HeadingOffer{
   font-size: 40px;
@@ -638,3 +641,58 @@ i {
 .offerDescription{
   padding: 10px;
 }  
+.OfertIMG{
+  width: 380px;
+}
+.hamburger-menu{
+  position: absolute;
+}
+
+.line{
+  background-color: #696565;
+}
+/* responsive offer */
+
+
+@media (min-width: 660px) {
+
+  .mainCointainerAboutUS{
+    width: auto;
+    height: auto;
+    background-color: var(--primaryBackgroundColor);
+  }
+  section {
+    width: auto;
+    height: auto;
+  }
+  .headerWrapperContent {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .topbar {
+    width: 100vw;
+  }
+  .offerContentWrapper{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+
+  }
+  .even{
+    flex-direction: row-reverse;
+  }
+
+
+  .wrapperOffert{
+    width: 100%;
+ 
+  }
+.OfertIMG{
+  width: 50%;
+  
+}.offerDescription{
+  line-height: 20px;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 10px;
+}} 
