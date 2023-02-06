@@ -20,8 +20,8 @@ body {
 /* Variables */
 
 :root {
-    --hooverColor:   #f6b741c9;
-    --primaryBackgroundColor: #ece4e4;
+  --hooverColor: #f6b741c9;
+  --primaryBackgroundColor: #ece4e4;
 }
 
 section {
@@ -52,7 +52,7 @@ section {
 
 /* <!-- Menu  --> */
 
-.nav-list{
+.nav-list {
   width: 100%;
   justify-content: center;
   background-color: #4b4b4b;
@@ -60,7 +60,7 @@ section {
   display: none;
   padding: 6px;
 }
-.nav-link{
+.nav-link {
   /* padding: 8px 45px; */
   display: flex;
   text-decoration: none;
@@ -70,11 +70,10 @@ section {
   letter-spacing: 1px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--hooverColor);
 }
 /* <!-- END - of- Menu  --> */
-
 
 /* Hamburger menu */
 .hamburger-menu {
@@ -103,7 +102,6 @@ section {
   height: 6px;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-
 
 /* Menu after click */
 .topbar {
@@ -164,12 +162,12 @@ section {
 .Containers {
   display: none;
   background-color: var(--primaryBackgroundColor);
-
-
 }
 .Containers img {
+  object-fit: contain;
   background-size: cover;
-  height: 75vh;}
+  height: 75vh;
+}
 
 /* Caption Info */
 .Info {
@@ -182,7 +180,6 @@ section {
   text-align: center;
 }
 
-
 /* Faint animation */
 .fade {
   -webkit-animation-name: fade;
@@ -192,13 +189,21 @@ section {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
 }
 /* Section 3 about company */
 .companyWrapper {
@@ -276,7 +281,6 @@ section {
   display: flex;
   justify-content: center;
   background-color: var(--primaryBackgroundColor);
-  
 }
 .placeBTN {
   display: flex;
@@ -288,7 +292,6 @@ section {
   border-radius: 5px;
   font-size: 22px;
   border: 1px solid black;
-
 }
 
 .placeBTN:hover {
@@ -330,7 +333,6 @@ section {
   flex-direction: column;
 }
 
-
 .service {
   width: 100%;
   margin-bottom: 20px;
@@ -362,7 +364,6 @@ i {
 }
 
 .about-us-img-wrapper {
-
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -459,10 +460,10 @@ i {
     background-position: center;
     background-color: #ece4e4;
   }
-  .sliderHeader{
+  .sliderHeader {
     padding-top: calc(38%);
   }
-  
+
   .carousel.fade {
     background-size: cover;
     width: 100%;
@@ -523,10 +524,10 @@ i {
     display: flex;
     flex-direction: row;
   }
-  .nav-list{
+  .nav-list {
     display: flex;
   }
-  .hamburger-menu{
+  .hamburger-menu {
     display: none;
   }
   .contactWrapper {
@@ -617,50 +618,116 @@ i {
 
 /* ABOUT US_ */
 
-.mainCointainerAboutUS{
+.mainCointainerAboutUS {
   width: 380px;
   height: 100%;
   background-color: var(--primaryBackgroundColor);
   position: relative;
 }
-.HeadingOffer{
+.HeadingOffer {
   font-size: 40px;
-  text-shadow: 4px 4px 6px grey;}
-.offerCointainer{
+  text-shadow: 4px 4px 6px grey;
+}
+.offerCointainer {
   display: flex;
   text-align: center;
 
-  flex-direction: column;}
-.wrapperOffert{
+  flex-direction: column;
+}
+.wrapperOffert {
   width: 380px;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
 }
-.offerDescription{
+.offerDescription {
   padding: 10px;
-}  
-.OfertIMG{
+}
+.OfertIMG {
   width: 380px;
 }
-.hamburger-menu{
+.hamburger-menu {
   position: absolute;
 }
 
-.line{
+.line {
   background-color: #696565;
 }
-/* responsive offer */
+
+
+/* 	 Realizations  */
+
+
+.realizations{
+  border-color: var(--primaryBackgroundColor);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.realizationsImgWraper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.realizationsImgWraper img{
+  width: auto;
+  padding: 5px;
+}
+
+@media(min-width: 360px){
+  .realizations{
+    width: auto;
+    height: auto;
+    display: flex;
+    text-align: center;
+  }
+  .realizationsImgWraper{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .realizationsImgWraper img{
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+  }
+  @media(min-width: 860px){
+    .realizationsImgWraper img{
+      width: 25%;
+      height: 25%;
+      padding: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 660px) {
-
-  .mainCointainerAboutUS{
+  .mainCointainerAboutUS {
     width: auto;
     height: auto;
     background-color: var(--primaryBackgroundColor);
-  }
+  }}
+
+  /* Offer */
   section {
     width: auto;
     height: auto;
@@ -672,27 +739,25 @@ i {
   .topbar {
     width: 100vw;
   }
-  .offerContentWrapper{
+  .offerContentWrapper {
     display: flex;
     width: 100%;
     padding: 10px;
-
   }
-  .even{
+  .even {
     flex-direction: row-reverse;
   }
 
-
-  .wrapperOffert{
+  .wrapperOffert {
     width: 100%;
- 
   }
-.OfertIMG{
-  width: 50%;
-  
-}.offerDescription{
-  line-height: 20px;
-  font-size: 18px;
-  text-align: left;
-  padding: 0 10px;
-}} 
+  .OfertIMG {
+    width: 50%;
+  }
+  .offerDescription {
+    line-height: 20px;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 10px;
+  }
+}
