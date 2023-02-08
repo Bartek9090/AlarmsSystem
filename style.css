@@ -43,37 +43,35 @@ section {
   width: 340px;
 }
 .headerImg {
-  display: flex;
   width: 300px;
   height: 80px;
+  /* display: flex;
   justify-content: flex-start;
-  margin-right: 40px;
+  margin-right: 40px; */
 }
 
 /* <!-- Menu  --> */
 
 .nav-list {
   width: 100%;
-  justify-content: center;
   background-color: #4b4b4b;
   justify-content: space-evenly;
   display: none;
-  padding: 6px;
+  padding:6px;
 }
 .nav-link {
-  /* padding: 8px 45px; */
   display: flex;
   text-decoration: none;
   color: #e3e3e3;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .nav-link:hover {
   color: var(--hooverColor);
 }
-/* <!-- END - of- Menu  --> */
 
 /* Hamburger menu */
 .hamburger-menu {
@@ -118,11 +116,7 @@ section {
 .menu-item {
   padding: 6px;
 }
-.far {
-  z-index: 100;
-  color: black;
-  background-color: black;
-}
+
 .menu-link {
   display: flex;
   text-align: center;
@@ -150,6 +144,7 @@ section {
     top: 50;
   }
 }
+/* <!-- END - of- Menu  --> */
 
 /* Section 2 carousel slider */
 
@@ -164,23 +159,23 @@ section {
   background-color: var(--primaryBackgroundColor);
 }
 .Containers img {
-  object-fit: contain;
-  background-size: cover;
+  background-size: contain;
   height: 75vh;
 }
 
 /* Caption Info */
 .Info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
+  background-color: #e3e3e3;
+  color: #0d0909;
+  font-size: 30px;
+  padding: 3px 14px;
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
 }
 
-/* Faint animation */
+/* FADE animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
@@ -216,11 +211,10 @@ section {
   height: 350px;
 }
 .companyContent {
-  line-height: 45px;
-
-  padding: 4px;
-  text-align: center;
-  font-size: 1.2rem;
+  line-height: 35px;
+  padding: 8px;
+  text-align: justify;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -382,9 +376,17 @@ i {
 
   width: 100px;
   font-weight: 600;
-  margin: 8px;
   border-radius: 5px;
   font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 180px;
+  font-weight: 600;
+  margin: 5% 5%;
+  border-radius: 5px;
+  font-size: 22px;
   border: 1px solid black;
 }
 .btnService:hover {
@@ -453,12 +455,17 @@ i {
   .topbar {
     width: 100vw;
   }
-  /* SLIDER I INNE PROBLEMY */
+  /* SLIDER */
   .section2Slider {
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-color: #ece4e4;
+  }
+
+  .Containers img {
+    object-fit: contain;
+ 
   }
   .sliderHeader {
     padding-top: calc(38%);
@@ -643,6 +650,9 @@ i {
 }
 .offerDescription {
   padding: 10px;
+  display: flex;
+  text-align: justify;
+
 }
 .OfertIMG {
   width: 380px;
@@ -706,26 +716,12 @@ i {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 660px) {
   .mainCointainerAboutUS {
     width: auto;
     height: auto;
     background-color: var(--primaryBackgroundColor);
-  }}
+  }
 
   /* Offer */
   section {
@@ -757,7 +753,8 @@ i {
   .offerDescription {
     line-height: 20px;
     font-size: 18px;
-    text-align: left;
-    padding: 0 10px;
+    text-align: justify;
+    padding: 0 25px 0 25px ;
   }
+}
 }
