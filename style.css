@@ -159,7 +159,7 @@ section {
   background-color: var(--primaryBackgroundColor);
 }
 .Containers img {
-  background-size: contain;
+  background-size: cover;
   height: 75vh;
 }
 
