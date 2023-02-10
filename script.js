@@ -13,18 +13,19 @@ navigationLinks.forEach(function (link) {
       document.querySelector("DOM").classList.remove('change')
     })
 })
+
 // slider carousel
 
 function SlideShow(n) {
   let i;
-  const slides = document.getElementsByClassName("Containers");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  const slidesCarousel = document.getElementsByClassName("Containers");
+  if (n > slidesCarousel.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slidesCarousel.length}
+  for (i = 0; i < slidesCarousel.length; i++) {
+    slidesCarousel[i].style.display = "none";
   }
   
-  slides[slidePosition-1].style.display = "block";
+  slidesCarousel[slidePosition-1].style.display = "block";
 } 
 
 let slidePosition = 0;
@@ -32,12 +33,14 @@ SlideShow();
 
 function SlideShow() {
   let i;
-  const slides = document.getElementsByClassName("Containers");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  const slidesCarousel = document.getElementsByClassName("Containers");
+  for (i = 0; i < slidesCarousel.length; i++) {
+    slidesCarousel[i].style.display = "none";
   }
   slidePosition++;
-  if (slidePosition > slides.length) {slidePosition = 1}
-  slides[slidePosition-1].style.display = "block";
+  if (slidePosition > slidesCarousel.length) {slidePosition = 1}
+  slidesCarousel[slidePosition-1].style.display = "block";
   setTimeout(SlideShow, 4000); // Change image every 4 seconds
 } 
+
+

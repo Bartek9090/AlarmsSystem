@@ -57,7 +57,7 @@ section {
   background-color: #4b4b4b;
   justify-content: space-evenly;
   display: none;
-  padding:6px;
+  padding: 6px;
 }
 .nav-link {
   display: flex;
@@ -165,7 +165,7 @@ section {
 
 /* Caption Info */
 .Info {
-  background-color: #e3e3e3;
+  background-color: var(--primaryBackgroundColor);
   color: #0d0909;
   font-size: 30px;
   padding: 3px 14px;
@@ -463,7 +463,6 @@ i {
     background-color: #ece4e4;
   }
 
-  
   .sliderHeader {
     padding-top: calc(38%);
   }
@@ -492,7 +491,6 @@ i {
   }
   .Containers img {
     object-fit: contain;
- 
   }
   .headerImg {
     height: 110px;
@@ -520,7 +518,7 @@ i {
     height: 100%;
   }
   .companyContent {
-    font-size: 2.35vmax;
+    font-size: 2vmax;
     padding: 20px 20px;
     line-height: 40px;
   }
@@ -652,7 +650,6 @@ i {
   padding: 10px;
   display: flex;
   text-align: justify;
-
 }
 .OfertIMG {
   width: 380px;
@@ -665,36 +662,34 @@ i {
   background-color: #696565;
 }
 
-
 /* 	 Realizations  */
 
-
-.realizations{
+.realizations {
   border-color: var(--primaryBackgroundColor);
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.realizationsImgWraper{
+.realizationsImgWraper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.realizationsImgWraper img{
+.realizationsImgWraper img {
   width: auto;
   padding: 5px;
 }
 
-@media(min-width: 360px){
-  .realizations{
+@media (min-width: 360px) {
+  .realizations {
     width: auto;
     height: auto;
     display: flex;
     text-align: center;
   }
-  .realizationsImgWraper{
+  .realizationsImgWraper {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -702,59 +697,225 @@ i {
     justify-content: center;
   }
 
-  .realizationsImgWraper img{
+  .realizationsImgWraper img {
     width: 50%;
     height: 50%;
     padding: 5px;
   }
-  @media(min-width: 860px){
-    .realizationsImgWraper img{
+  @media (min-width: 860px) {
+    .realizationsImgWraper img {
       width: 25%;
       height: 25%;
       padding: 10px;
     }
   }
 
+  @media (min-width: 660px) {
+    .mainCointainerAboutUS {
+      width: auto;
+      height: auto;
+      background-color: var(--primaryBackgroundColor);
+    }
+
+    /* Offer */
+    section {
+      width: auto;
+      height: auto;
+    }
+    .headerWrapperContent {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .topbar {
+      width: 100vw;
+    }
+    .offerContentWrapper {
+      display: flex;
+      width: 100%;
+      padding: 10px;
+    }
+    .even {
+      flex-direction: row-reverse;
+    }
+
+    .wrapperOffert {
+      width: 100%;
+    }
+    .OfertIMG {
+      width: 50%;
+    }
+    .offerDescription {
+      line-height: 20px;
+      font-size: 18px;
+      text-align: justify;
+      padding: 0 25px 0 25px;
+    }
+  }
+}
+
+/* Lightbox */
+
+/* You define the style of our previews here, you are using flex to display the images 
+	 "responsively". */
+
+.preview {
+  width: 90%;
+}
 
 @media (min-width: 660px) {
-  .mainCointainerAboutUS {
-    width: auto;
-    height: auto;
-    background-color: var(--primaryBackgroundColor);
-  }
-
-  /* Offer */
-  section {
-    width: auto;
-    height: auto;
-  }
-  .headerWrapperContent {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .topbar {
-    width: 100vw;
-  }
-  .offerContentWrapper {
-    display: flex;
-    width: 100%;
-    padding: 10px;
-  }
-  .even {
-    flex-direction: row-reverse;
-  }
-
-  .wrapperOffert {
+  .preview {
     width: 100%;
   }
-  .OfertIMG {
-    width: 50%;
-  }
-  .offerDescription {
-    line-height: 20px;
-    font-size: 18px;
-    text-align: justify;
-    padding: 0 25px 0 25px ;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 660px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
+.row > .col {
+  padding: 8px;
 }
+
+.col {
+  float: left;
+  width: 90%;
+}
+
+/* Now you want to define what the lightbox will look like. Note that you have the display
+	 as none. You don't want it to show until the user clicks on one of the previews. 
+	 You will change this display property with JavaScript below. */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 10px 62px 0px 62px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--primaryBackgroundColor);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0 0 0 0;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Same with your slides, you set the display to none, because you want to choose which 
+	 one is shown at a time. */
+
+.slide {
+  display: none;
+}
+
+.image-slide {
+  margin: 15% 0;
+  width: 100%;
+  height: 80vh;
+}
+@media (min-width: 660px) {
+  
+    .image-slide {
+      margin: 5% 0;
+      width: 100%;
+      height: 80vh;
+    }
+  }
+
+.modal-preview {
+  width: 100%;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* You want the previews a little transparent to show that they are "inactive". 
+	 You then add an .active or :hover class to animate the selections for your user when
+	 they interact with your controls and clickable content.
+   */
+
+img.preview,
+img.modal-preview {
+  opacity: 0.6;
+}
+
+img.active,
+.preview:hover,
+.modal-preview:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.close {
+  color: rgb(27, 26, 26);
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* End of - Lightbox */
