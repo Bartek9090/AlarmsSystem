@@ -22,6 +22,8 @@ body {
 :root {
   --hooverColor: #f6b741c9;
   --primaryBackgroundColor: #ece4e4;
+  --headerFontStyle: "Muli", serif;
+
 }
 
 section {
@@ -230,7 +232,8 @@ section {
 }
 
 .whereTXT {
-  font-size: 34px;
+  font-family: var(--headerFontStyle);
+  font-size: 6vw;
   color: #ece4e4;
   letter-spacing: 3px;
 }
@@ -306,16 +309,17 @@ section {
 
 .section-heading {
   font-family: "Muli", serif;
-  font-size: 40px;
+  font-size: 6vw;
   font-weight: 300;
   color: #4f4e4e;
   margin-bottom: 1rem;
 }
 
 .underline {
-  width: 240px;
+  width: 40vw;
   height: 6px;
   background-color: rgb(246, 182, 64);
+  margin-bottom: 10px;
 }
 
 .services {
@@ -452,7 +456,7 @@ i {
     justify-content: flex-start;
   }
   .topbar {
-    width: 100vw;
+    width: 110%;
   }
   /* SLIDER */
   .section2Slider {
@@ -627,6 +631,55 @@ i {
   }
 }
 
+/* Section 6 cooperation */
+
+.cooperation{
+  background-color: var(--primaryBackgroundColor);
+  
+}
+.cooperationHeaderWrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.cooperationTXT{
+  font-style: var(--headerFontStyle);
+
+  font-size: 6vw;
+  font-weight: 400;
+  color: #2a2929;
+  margin-bottom: 1rem;
+}
+
+
+
+.cooperationPlaceWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cooperationPlaceWrapper img{
+  width: 70%;
+  opacity: 0.8;
+}
+
+@media (min-width: 660px){
+  .cooperationPlaceWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    
+  }
+  .cooperationPlaceWrapper img{
+    width: 40%;
+ 
+  }
+}
 /* ABOUT US */
 
 .mainCointainerAboutUS {
@@ -636,7 +689,7 @@ i {
   position: relative;
 }
 .HeadingOffer {
-  font-size: 40px;
+  font-size: 6vw;
   text-shadow: 4px 4px 6px grey;
 }
 .offerCointainer {
@@ -651,6 +704,9 @@ i {
   text-align: center;
   flex-direction: column;
   justify-content: center;
+}
+.SubheadingOfferHeading{
+  font-size: 4vw;
 }
 .offerDescription {
   padding: 10px 20px;
@@ -677,9 +733,14 @@ i {
   text-align: center;
 }
 .realizations h1{
-  font-size: 30px;
+  font-size: 5vw;
   letter-spacing: normal;
   margin: 10px 0;
+}
+.realizations h2{
+  font-size: 3vw;
+  letter-spacing: normal;
+  margin: 6px 0;
 }
 
 .realizationsImgWraper {
@@ -738,7 +799,7 @@ i {
       justify-content: flex-start;
     }
     .topbar {
-      width: 100vw;
+      width: 110vw;
     }
     .offerContentWrapper {
       display: flex;
