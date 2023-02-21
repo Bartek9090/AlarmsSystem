@@ -23,7 +23,7 @@ body {
   --hooverColor: #f6b741c9;
   --primaryBackgroundColor: #ece4e4;
   --secondaryBackgroundColor: #4b4b4b;
-  --headerFontStyle: 'Mulish', sans-serif;
+  --headerFontStyle: "Mulish", sans-serif;
   --mainTXTColor: #0d0909;
   --secondaryTXTColor: #ece4e4;
 }
@@ -232,18 +232,19 @@ section {
   flex-direction: column;
   text-align: center;
   color: var(--secondaryTXTColor);
-
 }
 
 .whereTXT {
   font-family: var(--headerFontStyle);
-  font-size: 6vw;
-  letter-spacing: 3px;
+  color: var(--secondaryTXTColor);
+  font-size: clamp(2.5rem, 4.5vw, 8rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .whereDescription {
   padding: 8px;
-  font-size: 20px;
+  font-size: clamp(1.5rem, 2.2vw, 5rem);
 }
 .wherePlaceWrapper {
   display: flex;
@@ -311,11 +312,10 @@ section {
 }
 
 .section-heading {
-  font-family: "Muli", serif;
-  font-size: 6vw;
-  font-weight: 300;
+  font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
-  
+  font-size: clamp(2.5rem, 4.5vw, 8rem);
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -362,7 +362,6 @@ i {
   margin-bottom: 2px;
   letter-spacing: 1px;
   color: var(--mainTXTColor);
-
 }
 
 .about-us-img-wrapper {
@@ -646,11 +645,10 @@ i {
   justify-content: center;
 }
 .cooperationTXT {
-  font-style: var(--headerFontStyle);
-
-  font-size: 6vw;
-  font-weight: 600;
+  font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
+  font-size: clamp(2.5rem, 4.5vw, 8rem);
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
@@ -686,15 +684,17 @@ i {
   position: relative;
 }
 .HeadingOffer {
-  font-size: 6vw;
+  font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
+  font-size: clamp(3rem, 5.5vw, 9rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
 
   text-shadow: 4px 4px 6px grey;
 }
 .offerCointainer {
   display: flex;
   text-align: center;
-
   flex-direction: column;
 }
 .wrapperOffert {
@@ -704,9 +704,13 @@ i {
   flex-direction: column;
   justify-content: center;
   color: var(--mainTXTColor);
+  text-shadow: 4px 4px 6px grey;
 }
 .SubheadingOfferHeading {
-  font-size: 4vw;
+  font-family: var(--headerFontStyle);
+  color: var(--mainTXTColor);
+  font-size: clamp(2rem, 3.5vw, 7rem);
+  font-weight: 500;
 }
 .offerDescription {
   padding: 10px 20px;
@@ -734,7 +738,6 @@ i {
     text-align: center;
     align-items: center;
   }
-
 }
 
 /* 	 Realizations  */
@@ -746,18 +749,18 @@ i {
   text-align: center;
 }
 .realizations h1 {
-  font-size: 5vw;
-  letter-spacing: normal;
-  margin: 10px 0;
+  font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
-
+  font-size: clamp(3rem, 5.5vw, 9rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 .realizations h2 {
-  font-size: 3vw;
-  letter-spacing: normal;
-  margin: 6px 0;
+  font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
-
+  font-size: clamp(2rem, 3vw, 7rem);
+  font-weight: 300;
+  margin: 6px 0;
 }
 
 .realizationsImgWraper {
