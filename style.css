@@ -160,7 +160,7 @@ section {
 }
 .Containers img {
   background-size: cover;
-  height: 87vh;
+  height: 82vh;
 }
 
 /* Caption Info */
@@ -329,7 +329,9 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -337,7 +339,7 @@ section {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
 
 /* Do kolejnego opcjonalnego wyrzucenia */
@@ -347,11 +349,14 @@ section {
 
 .service-header {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
 }
 
 .service-header i {
+  display: flex;
+
   color: var(--mainTXTColor);
   margin: 0 18px;
 }
@@ -460,6 +465,9 @@ section {
   .topbar {
     width: 110%;
   }
+  .footer-wrapper {
+    width: auto;
+  }
   /* SLIDER */
   .section2Slider {
     width: 100vw;
@@ -485,9 +493,7 @@ section {
     height: 80px;
     margin-right: 0px;
   }
-  .footer-wrapper {
-    width: auto;
-  }
+ 
 }
 @media (min-width: 680px) {
   .headerWrapperContent {
@@ -679,12 +685,7 @@ section {
 }
 /* ABOUT US offert */
 
-.mainCointainerAboutUS {
-  width: 340px;
-  height: 100%;
-  background-color: var(--primaryBackgroundColor);
-  position: relative;
-}
+
 .HeadingOffer {
   font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
@@ -697,6 +698,7 @@ section {
 .offerCointainer {
   display: flex;
   text-align: center;
+  align-items: center;
   flex-direction: column;
 }
 .wrapperOffert {
@@ -718,6 +720,8 @@ section {
   padding: 10px 20px;
   display: flex;
   text-align: justify;
+  text-shadow: none;
+  font-size: clamp(1.2rem, 20px, 4rem);
 }
 .OfertIMG {
   width: 340px;
@@ -728,17 +732,6 @@ section {
 
 
 
-@media (min-width: 360px) {
-  .mainCointainerAboutUS {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-}
 
 /* 	 Realizations  */
 
@@ -840,7 +833,7 @@ section {
   }
   .offerDescription {
     line-height: 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: justify;
     padding: 0 25px 0 25px;
   }
