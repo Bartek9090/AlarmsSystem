@@ -88,7 +88,7 @@ section {
   background-color: var(--secondaryBackgroundColor);
   z-index: 100;
   position: fixed;
-  top: -100%;
+  top: -120%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,10 +118,10 @@ section {
 
 @keyframes animateNavbar {
   0% {
-    top: -850px;
+    top: -120%;
   }
   100% {
-    top: 50;
+    top: 0%;
   }
 }
 /* <!-- END - of- Menu  --> */
@@ -156,7 +156,7 @@ section {
 }
 .Containers img {
   background-size: cover;
-  height: 82vh;
+  height: 100svh;
   opacity: 0.7;
 
 }
@@ -168,7 +168,7 @@ section {
   font-size: clamp(2.5rem, 4.5vw, 8rem);
   padding: 3px 14px;
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -519,7 +519,7 @@ section {
 
 @media (min-width: 660px) {
   .companyWrapper {
-    flex-direction: row;
+    flex-direction: row-reverse;
     max-height: 90vh;
   }
   .companyIMG {
@@ -532,8 +532,7 @@ section {
   }
   .companyContent {
     font-size: 2vmax;
-  
-  }
+    }
 }
 
 @media (min-width: 860px) {
@@ -721,9 +720,6 @@ section {
   position: absolute;
 }
 
-
-
-
 /* 	 Realizations  */
 
 .realizations {
@@ -736,7 +732,7 @@ section {
 .realizations h1 {
   font-family: var(--headerFontStyle);
   color: var(--mainTXTColor);
-  font-size: clamp(3rem, 5.5vw, 9rem);
+  font-size: clamp(3.2rem, 5.5vw, 9rem);
   font-weight: 500;
   margin-bottom: 1rem;
 }
