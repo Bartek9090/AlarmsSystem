@@ -838,12 +838,17 @@ section {
   }
   .offerDescription {
     line-height: 40px;
-    font-size: clamp(1rem, 26px, 5rem);
+    font-size: clamp(0.8rem, 16px, 3rem);
     text-align: justify;
     padding: 0 25px 0 25px;
   }
 }
 
+@media (min-width: 1000px) {
+  .offerDescription{
+    font-size: clamp(1.2rem, 24px, 5rem);
+
+  }}
 /* Lightbox */
 
 .preview {
