@@ -202,15 +202,19 @@ section {
 /* Section 3 about company */
 .companyWrapper {
   display: flex;
-  flex-direction: column;
   background-color: var(--primaryBackgroundColor);
-}
+
+ 
+  }
+
+ 
 /* .companyIMG {
   width: 100%;
   height: 50%;
 } */
 .companyContent {
   line-height: 30px;
+  /* flex: 0 0 70%; */
   padding: 12px 25px;
   text-align: justify;
   font-size: 1.2rem;
@@ -236,12 +240,14 @@ section {
   color: var(--secondaryTXTColor);
   font-size: clamp(2.5rem, 4.5vw, 8rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 .whereDescription {
   padding: 8px 12px;
   font-size: clamp(1.5rem, 2.2vw, 5rem);
+  margin: 0 0 1rem 0;
+
 }
 .wherePlaceWrapper {
   display: flex;
@@ -480,18 +486,9 @@ section {
     width: auto;
   }
   /* SLIDER */
-  .section2Slider {
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-color: var(--primaryBackgroundColor);
-  }
 
-  .sliderHeader {
-    padding-top: calc(38%);
-  }
 
-  .carousel.fade {
+  .fade {
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -505,15 +502,27 @@ section {
   }
 }
 @media (min-width: 680px) {
+.Containers{
+  height:  70svh;
+
+}
   .Containers img {
     object-fit: cover;
-    height: 90vh;
+    height:  80vh;
   }
 
   .mainContactWrapper {
     flex-direction: row;
   }
 }
+@media (min-width: 1280px){
+.Containers  {
+    object-fit: cover;
+    height: 90svh;}
+    .Containers img {
+      object-fit: cover;
+      height:  100%;
+    }}
 
 /* section 3 */
 @media (min-width: 380px) {
@@ -526,18 +535,27 @@ section {
 @media (min-width: 660px) {
   .companyWrapper {
     flex-direction: row-reverse;
-    max-height: 90vh;
+    /* max-height: 90vh; */
+    background: url(IMG/cameraBlueBG.jpg) center no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    min-height: 500px;
   }
-  .companyIMG {
+
+  
+  /* .companyIMG {
     width: 50%;
     max-height: 90vh;
-  }
+  } */
   .companyDescription {
-    width: 50%;
+    flex: 0 1 68%;
     height: 100%;
+    font-weight: 700;
+  
   }
   .companyContent {
-    font-size: 2vmax;
+    font-size: 1.7vmax;
+    font-weight: 600;
   }
 }
 
@@ -553,7 +571,7 @@ section {
     display: none;
   }
   .contactWrapper {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   /* section -5 services */
   .services-grid {
@@ -580,7 +598,8 @@ section {
   }
 
   .companyContent {
-    line-height: 45px;
+    line-height: 40px;
+    
   }
   .service-header i {
     color: var(--secondaryTXTColor);
@@ -763,16 +782,6 @@ section {
   margin: 6px 0;
 }
 
-.realizationsImgWraper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.realizationsImgWraper img {
-  width: auto;
-  padding: 5px;
-}
 
 @media (min-width: 360px) {
   .realizations {
@@ -781,19 +790,7 @@ section {
     display: flex;
     text-align: center;
   }
-  .realizationsImgWraper {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
 
-  .realizationsImgWraper img {
-    width: 50%;
-    height: 50%;
-    padding: 5px;
-  }
 }
 @media (min-width: 660px) {
   .mainCointainerAboutUS {
@@ -835,10 +832,13 @@ section {
   }
   .OfertIMG {
     width: 50%;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
   }
   .offerDescription {
-    line-height: 40px;
-    font-size: clamp(0.8rem, 16px, 3rem);
+    line-height: 35px;
+    font-size: clamp(0.8rem, 14px, 2rem);
     text-align: justify;
     padding: 0 25px 0 25px;
   }
@@ -846,7 +846,7 @@ section {
 
 @media (min-width: 1000px) {
   .offerDescription{
-    font-size: clamp(1.2rem, 24px, 5rem);
+    font-size: clamp(1.2rem, 20px, 5rem);
 
   }}
 /* Lightbox */
@@ -856,9 +856,6 @@ section {
 }
 
 @media (min-width: 660px) {
-  .preview {
-    width: 100%;
-  }
 }
 
 .row {
@@ -907,7 +904,7 @@ section {
   margin: auto;
   padding-top: 0;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .slide {
@@ -915,9 +912,9 @@ section {
 }
 
 .image-slide {
-  margin: 15% 0;
-  width: 100%;
-  height: 80vh;
+  margin: 35% 0;
+  width: 80%;
+  height: 60vh;
 }
 @media (min-width: 660px) {
   .image-slide {
