@@ -153,7 +153,7 @@ section {
 }
 .Containers img {
   background-size: cover;
-  height: 86svh;
+  height: 87svh;
   opacity: 0.7;
 }
 
@@ -340,25 +340,10 @@ section {
 
 .service {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin: auto;
   margin-left: 50px;
 }
-/* .service:nth-child(2) {
-  margin-left: -12px;
-}
-.service:nth-child(3) {
-  margin-left: 0;
-}
-.service:nth-child(4) {
-  margin-left: -18px;
-}
-.service:nth-child(5) {
-  margin-left: -4px;
-}
-.service:nth-child(6) {
-  margin-left: -10px;
-} */
 
 /* Do kolejnego opcjonalnego wyrzucenia */
 .service-header {
@@ -493,7 +478,8 @@ section {
     height: 100%;
     background-repeat: no-repeat;
   }
-
+}
+@media (min-width: 425px) {
   .headerImg {
     display: flex;
     width: auto;
@@ -502,7 +488,7 @@ section {
 }
 @media (min-width: 680px) {
   .Containers {
-    height: 70svh;
+    height: 80svh;
   }
   .Containers img {
     object-fit: cover;
@@ -538,30 +524,31 @@ section {
     /* max-height: 90vh; */
     background: url(IMG/cameraBlueBG.jpg) center no-repeat;
     background-size: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     min-height: 500px;
   }
 
-  /* .companyIMG {
-    width: 50%;
-    max-height: 90vh;
-  } */
   .companyDescription {
     flex: 0 1 68%;
     height: 100%;
     font-weight: 700;
   }
   .companyContent {
+    padding: 10%;
     font-size: 1.7vmax;
     font-weight: 600;
+    color: var(--secondaryTXTColor);
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 760px) {
   .wherePlaceWrapper {
     display: flex;
     flex-direction: row;
   }
+}
+
+@media (min-width: 860px) {
   .nav-list {
     display: flex;
   }
@@ -932,8 +919,8 @@ section {
 
 img.preview,
 img.modal-preview {
-  opacity: 0.6;
   border: 2px solid black;
+  opacity: 0.6;
 }
 
 img.active,
