@@ -346,14 +346,16 @@ section {
 }
 
 /* Do kolejnego opcjonalnego wyrzucenia */
-.service-header {
+/* .service-header {
   width: 250px;
-}
+} */
 
 .service-header {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .service-header i {
@@ -580,6 +582,9 @@ section {
     background-color: rgba(75, 75, 75, 0.416);
     height: 80px;
     width: 320px;
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
   }
 
   .companyContent {
@@ -587,7 +592,6 @@ section {
   }
   .service-header i {
     color: var(--secondaryTXTColor);
-
     font-size: 28px;
   }
   .service-header {
