@@ -354,8 +354,6 @@ section {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .service-header i {
@@ -588,6 +586,9 @@ section {
   }
 
   .companyContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     line-height: 40px;
   }
   .service-header i {
