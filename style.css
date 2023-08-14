@@ -83,11 +83,11 @@ section {
 /* Topbar - modal*/
 .topbar {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--secondaryBackgroundColor);
   z-index: 100;
   position: fixed;
-  top: -120%;
+  top: -100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@ section {
 
 @keyframes animateNavbar {
   0% {
-    top: -120%;
+    top: -100%;
   }
   100% {
     top: 0%;
@@ -203,11 +203,8 @@ section {
 .companyWrapper {
   display: flex;
   background-color: var(--primaryBackgroundColor);
+}
 
- 
-  }
-
- 
 /* .companyIMG {
   width: 100%;
   height: 50%;
@@ -247,7 +244,6 @@ section {
   padding: 8px 12px;
   font-size: clamp(1.5rem, 2.2vw, 5rem);
   margin: 0 0 1rem 0;
-
 }
 .wherePlaceWrapper {
   display: flex;
@@ -274,10 +270,13 @@ section {
   color: var(--mainTXTColor);
   padding-left: 18px;
 }
-.fa-building {
+
+/* Tutaj ostatniz listy wideodomofon */
+
+/* .fa-building {
   padding-right: 4px;
   margin-right: 24px;
-}
+} */
 .btnPlaceWrapper {
   display: flex;
   justify-content: center;
@@ -339,16 +338,16 @@ section {
 }
 
 .service {
-  width: 100%;
-  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin: auto;
+  margin-left: 50px;
 }
-.service:nth-child(2) {
+/* .service:nth-child(2) {
   margin-left: -12px;
 }
 .service:nth-child(3) {
-  margin-left: 12px;
+  margin-left: 0;
 }
 .service:nth-child(4) {
   margin-left: -18px;
@@ -358,24 +357,23 @@ section {
 }
 .service:nth-child(6) {
   margin-left: -10px;
-}
+} */
 
 /* Do kolejnego opcjonalnego wyrzucenia */
-/* .service-header {
+.service-header {
   width: 250px;
-} */
+}
 
 .service-header {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
 .service-header i {
   display: flex;
   color: var(--mainTXTColor);
-  margin: 0 18px;
+  justify-content: flex-start;
 }
 
 .service-header h3 {
@@ -385,6 +383,7 @@ section {
   margin-bottom: 2px;
   letter-spacing: 1px;
   color: var(--mainTXTColor);
+  display: flex;
 }
 
 .about-us-img-wrapper {
@@ -487,7 +486,6 @@ section {
   }
   /* SLIDER */
 
-
   .fade {
     background-size: cover;
     width: 100%;
@@ -502,27 +500,28 @@ section {
   }
 }
 @media (min-width: 680px) {
-.Containers{
-  height:  70svh;
-
-}
+  .Containers {
+    height: 70svh;
+  }
   .Containers img {
     object-fit: cover;
-    height:  80vh;
+    height: 80vh;
   }
 
   .mainContactWrapper {
     flex-direction: row;
   }
 }
-@media (min-width: 1280px){
-.Containers  {
+@media (min-width: 1280px) {
+  .Containers {
     object-fit: cover;
-    height: 90svh;}
-    .Containers img {
-      object-fit: cover;
-      height:  100%;
-    }}
+    height: 90svh;
+  }
+  .Containers img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
 
 /* section 3 */
 @media (min-width: 380px) {
@@ -542,7 +541,6 @@ section {
     min-height: 500px;
   }
 
-  
   /* .companyIMG {
     width: 50%;
     max-height: 90vh;
@@ -551,7 +549,6 @@ section {
     flex: 0 1 68%;
     height: 100%;
     font-weight: 700;
-  
   }
   .companyContent {
     font-size: 1.7vmax;
@@ -599,7 +596,6 @@ section {
 
   .companyContent {
     line-height: 40px;
-    
   }
   .service-header i {
     color: var(--secondaryTXTColor);
@@ -782,7 +778,6 @@ section {
   margin: 6px 0;
 }
 
-
 @media (min-width: 360px) {
   .realizations {
     width: auto;
@@ -790,7 +785,6 @@ section {
     display: flex;
     text-align: center;
   }
-
 }
 @media (min-width: 660px) {
   .mainCointainerAboutUS {
@@ -845,10 +839,10 @@ section {
 }
 
 @media (min-width: 1000px) {
-  .offerDescription{
+  .offerDescription {
     font-size: clamp(1.2rem, 20px, 5rem);
-
-  }}
+  }
+}
 /* Lightbox */
 
 .preview {
