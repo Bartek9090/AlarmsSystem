@@ -593,6 +593,8 @@ section {
   }
   .service-header {
     margin-bottom: 0;
+    align-content: center;
+    flex-wrap: wrap;
   }
   .service-header h3 {
     color: var(--secondaryTXTColor);
@@ -775,26 +777,28 @@ section {
     display: flex;
     text-align: center;
   }
+  .wrapperOffert {
+    width: 100%;
+  }
+  .OfertIMG {
+    width: 80vw;
+  }
+  .offerDescription {
+    text-align: justify;
+  }
 }
+/* Offer - about-us */
 @media (min-width: 660px) {
+  section {
+    width: auto;
+    height: auto;
+  }
   .mainCointainerAboutUS {
     width: auto;
     height: auto;
     background-color: var(--primaryBackgroundColor);
   }
-  @media (min-width: 860px) {
-    .realizationsImgWraper img {
-      width: 25%;
-      height: 25%;
-      padding: 10px;
-    }
-  }
 
-  /* Offer - about-us */
-  section {
-    width: auto;
-    height: auto;
-  }
   .headerWrapperContent {
     display: flex;
     justify-content: flex-start;
@@ -806,31 +810,55 @@ section {
     display: flex;
     width: 100%;
     padding: 10px;
-  }
-  .even {
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   .wrapperOffert {
     width: 100%;
   }
   .OfertIMG {
-    width: 50%;
+    width: 100%;
     max-height: 600px;
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: right;
   }
   .offerDescription {
-    line-height: 35px;
+    line-height: 25px;
     font-size: clamp(0.8rem, 14px, 2rem);
     text-align: justify;
     padding: 0 25px 0 25px;
   }
 }
-
+@media (min-width: 760px) {
+  .offerContentWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .OfertIMG {
+    width: 50%;
+    float: right;
+  }
+  .offerDescription {
+    width: 50%;
+    float: right;
+  }
+  .even {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 860px) {
+  .realizationsImgWraper img {
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+  }
+}
 @media (min-width: 1000px) {
   .offerDescription {
-    font-size: clamp(1.2rem, 20px, 5rem);
+    font-size: clamp(1rem, 18px, 4rem);
   }
 }
 /* Lightbox */
