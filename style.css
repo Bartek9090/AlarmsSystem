@@ -764,10 +764,15 @@ section {
 }
 .realizations h2 {
   font-family: var(--headerFontStyle);
-  color: var(--mainTXTColor);
+  color: var(--secondaryTXTColor);
   font-size: clamp(2rem, 3vw, 7rem);
   font-weight: 300;
   margin: 6px 0;
+}
+.realizationsDescription {
+  font-family: var(--headerFontStyle);
+  color: var(--mainTXTColor);
+  font-size: clamp(1rem, 2.5vw, 5rem);
 }
 
 @media (min-width: 360px) {
@@ -891,7 +896,7 @@ section {
 
 .col {
   float: left;
-  width: 90%;
+  width: 25%;
 }
 
 .modal {
@@ -899,7 +904,6 @@ section {
   position: fixed;
   z-index: 1;
   padding-top: 10px;
-
   left: 0;
   top: 0;
   width: 100%;
