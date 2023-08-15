@@ -871,8 +871,10 @@ section {
 .preview {
   width: 100%;
 }
-
-@media (min-width: 660px) {
+.col {
+  float: left;
+  width: 90%;
+  padding: 8px;
 }
 
 .row {
@@ -889,14 +891,9 @@ section {
     align-items: center;
     justify-content: space-between;
   }
-}
-.row > .col {
-  padding: 8px;
-}
-
-.col {
-  float: left;
-  width: 25%;
+  .col {
+    width: 25%;
+  }
 }
 
 .modal {
