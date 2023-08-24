@@ -2,7 +2,7 @@
 -------------------------
 
 ## Description
-Responsive alarm system. Websute made for practice.
+Responsive alarm system site. Websute made for practice.
 
 ## About Project 
 The main page of website contains following section:
