@@ -128,7 +128,6 @@ section {
 .headerWrapperContent {
   display: flex;
   background-color: var(--primaryBackgroundColor);
-  /* background-size: 100% 120%; */
   position: relative;
 }
 
@@ -204,13 +203,8 @@ section {
   background-color: var(--primaryBackgroundColor);
 }
 
-/* .companyIMG {
-  width: 100%;
-  height: 50%;
-} */
 .companyContent {
   line-height: 30px;
-  /* flex: 0 0 70%; */
   padding: 12px 25px;
   text-align: justify;
   font-size: 1.2rem;
@@ -328,27 +322,16 @@ section {
   margin-bottom: 10px;
 }
 
-/* .services {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
 .service {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: 20%; */
 }
 .service-header {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* align-content: center; */
   justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -518,7 +501,7 @@ section {
   .companyWrapper {
     flex-direction: row-reverse;
     /* max-height: 90vh; */
-    background: url(IMG/cameraBlueBG.jpg) center no-repeat;
+    background: url(IMG/cameraBlueBG.webp) center no-repeat;
     background-size: 100%;
     opacity: 0.7;
     min-height: 500px;
@@ -564,7 +547,7 @@ section {
     /* margin-top: 28rem; */
   }
   .services {
-    background: center no-repeat url(IMG/cameraBrickWall.jpg);
+    background: center no-repeat url(IMG/cameraBrickWallSkimmed2.webp);
     background-size: 100%;
     display: grid;
     /* grid-template-columns: repeat(20, 1fr); */
@@ -790,6 +773,7 @@ section {
   }
   .offerDescription {
     text-align: justify;
+    align-items: center;
   }
 }
 /* Offer - about-us */
@@ -925,15 +909,15 @@ section {
 }
 
 .image-slide {
-  margin: 35% 0;
-  width: 80%;
-  height: 60vh;
+  margin: auto;
+  width: 90%;
+  height: 98vh;
 }
 @media (min-width: 660px) {
   .image-slide {
     margin: 5% 0;
     width: 100%;
-    height: 80vh;
+    height: 88vh;
   }
 }
 
@@ -971,7 +955,7 @@ img.hover-shadow {
   color: var(--secondaryBackgroundColor);
   position: absolute;
   top: 50px;
-  right: 25px;
+  right: 10px;
   font-size: 45px;
   font-weight: bold;
   z-index: 100;
